@@ -1,0 +1,6 @@
+redis:
+  image: redis
+server:
+  image: btimperman/multihost-demo
+  ports:
+   - "80:3000"
