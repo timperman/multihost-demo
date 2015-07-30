@@ -8,7 +8,7 @@ var server = http.createServer(function(request, response) {
 	client.get('counter', function(err, reply) {
 		var counter = (reply == null) ? 0 : parseInt(reply);
 		client.set('counter', '' + (counter + 1));
-		response.end('Counter: ' + )
+		response.end('Counter: ' + counter);
 	});
 });
 
